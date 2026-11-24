@@ -35,6 +35,10 @@ Each test is repeated 3 times and the average is printed.
 | (B) Waiting | 4.02 s | 1.01 s | 3.99x |
 
 ## What I found
-[Write 1–2 sentences in your own words: when did threads help, when didn't they, and why?]
+The story in 4 sentences
+You asked: if I give 4 jobs to 4 workers (threads) instead of 1 worker, will they finish faster?
+You predicted: yes, faster in both cases.
+You tested it with a Python program you built step by step on your own Mac.
+You found: for waiting jobs, 4 threads were 4× faster. For maths jobs, they were no faster at all, because Python's GIL only lets one thread do maths at a time, even though your Mac has 10 cores.
 
 Code written step by step with help from Claude (an AI tool); I ran every test myself on my own Mac.
